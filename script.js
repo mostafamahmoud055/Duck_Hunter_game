@@ -23,7 +23,7 @@ button.addEventListener("click", function () {
       blood.style.display = "block";
       setTimeout(function () {
         blood.style.display = "none";
-      }, 1000);
+      }, 750);
     }
     audio.play();
   });
@@ -32,5 +32,5 @@ button.addEventListener("click", function () {
     randTop = Math.random() * screenHeight;
     duck.style.left = randLeft + "px";
     duck.style.top = randTop + "px";
-  }, 1000);
+  }, 750);
 });
