@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('imgs/stage.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.duck{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    transition: all 1s;
+}
+.cursor,.blood{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor{
+    z-index: 3;
+}
+.duck{
+    z-index: 2;
+}
+.blood  {
+    z-index: 1;
+}
